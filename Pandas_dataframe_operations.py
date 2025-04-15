@@ -9,4 +9,9 @@ df = pd.DataFrame(data)
 
 df.head(2)
 df.tail(2)
-print(df.info())
+# df.info()
+df.shape
+df.columns
+young = df[(df['Вік']<30) & ((df['Місто'] == 'Lviv') | (df['Місто'] == 'Lutsk') | (df['Місто'] == 'Odesa'))]
+sorted_df = df.sort_values(by='Вік', ascending=True)
+print(sorted_df)
