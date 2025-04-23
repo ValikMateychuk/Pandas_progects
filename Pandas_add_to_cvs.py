@@ -6,5 +6,4 @@ data = {
     'Місто': ['Lutsk', 'Kyiv', 'Odesa', 'Kharkiv', 'Lviv', 'Dnipro']}
 
 df = pd.DataFrame(data)
-df.to_csv('users.csv', mode='a', sep=',', index=False)
-
+df.to_csv('users.csv', mod='a', sep=',', index=False)

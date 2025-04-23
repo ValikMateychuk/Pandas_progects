@@ -14,5 +14,6 @@ df['day_of_week'] = df['date'].dt.day_name()
 
 df = df[df['date'] > '1989-01-01']
 
+pd.Timestamp.now()
 
 print(df)
